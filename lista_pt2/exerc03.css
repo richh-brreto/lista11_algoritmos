@@ -1,0 +1,10 @@
+#exibir {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+
+#exibir img {
+    width: 100px; 
+    height: auto; 
+}

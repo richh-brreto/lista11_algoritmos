@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+    <button onclick="mostraNum()">Números cabalísticos</button>
+    <div id="exibirResultado"></div>
+</body>
+</html>
+<script>
+    function mostraNum(){
+        for(var num = 0; num <= 30; num ++ ){
+            if(num == 3 || num == 4 || num == 7 || num == 10 || num == 12){
+                exibirResultado.innerHTML += ``
+            } else {
+                exibirResultado.innerHTML += `${num} <br>`
+            }
+        };
+    };
+
+</script>

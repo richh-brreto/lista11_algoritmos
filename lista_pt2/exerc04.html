@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <link rel="stylesheet" href="exerc03.css">
+</head>
+<body>
+    <label for="ipt_latas">Insira quantas coca-colas acha que já bebeu na vida </label>
+    <input type="number" id="ipt_latas">
+    <button onclick="checarQuantidade()">Ver a quantidade</button>
+    <div id="exibir"></div>
+    
+</body>
+<script>
+    function checarQuantidade(){
+        var exibir = document.getElementById("exibir");
+        exibir.innerHTML = ``
+        var latas = Number(ipt_latas.value);
+
+        for(var contador = 0; contador < latas; contador ++){
+            exibir.innerHTML += `<img src="https://http2.mlstatic.com/D_NQ_NP_769350-MLB50423257155_062022-O.webp">`
+        };
+    };
+</script>
+</html>

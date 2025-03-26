@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <input type="text" id="ipt_frase">
+    <button onclick="exibirResultado()">Diga algo sobre a matéria de algoritmos</button>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function exibirResultado(){
+        exibir.innerHTML = ``;
+        var frase = ipt_frase.value
+        for(var contador = 1; contador <= 7; contador ++){
+            exibir.innerHTML += `${contador}. ${frase} <br>`
+        };
+    };
+
+</script>

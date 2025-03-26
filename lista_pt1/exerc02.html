@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <button onclick="exibirResultado()">Diga algo sobre a matéria de algoritmos</button>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function exibirResultado(){
+        var frase = "Melhor matéria";
+        for(var contador = 0; contador < 7; contador += 1 ){
+            exibir.innerHTML += `${frase} <br>`
+        };
+    };
+</script>

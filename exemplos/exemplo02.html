@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="ipt_num">
+    <button onclick="ehPar()">Ver se é par</button>
+</body>
+</html>
+<script>
+    function ehPar(){
+        var numDigitado = Number(ipt_num.value);
+
+        if(numDigitado % 2 == 0){
+            alert("O número é par")
+/*        } else {
+            alert('O número não é par')     */
+        };
+    };
+
+    // se fosse pra verificar se é ímpar
+
+    function ehImpar(){
+        var numDigitado = Number(ipt_num.value);
+
+        if(numDigitado % 2 != 0){
+            alert('É um ímpar')
+        };
+    };
+    
+</script>

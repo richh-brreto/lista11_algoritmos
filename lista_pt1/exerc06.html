@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <input type="number" id="ipt_num" min="20" max="100" step="1">
+    <button onclick="mostraMultiplos()">Adoro multíplos de 5</button>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function mostraMultiplos(){
+        exibir.innerHTML= ``
+        var numInformado = Number(ipt_num.value);
+        for(var contador = 0; contador <= numInformado; contador += 5 ){
+            exibir.innerHTML += `${contador} <br>`
+        };
+    };
+</script>;
