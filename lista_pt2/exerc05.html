@@ -6,9 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <label for="ipt_xicaras">Insira aqui a quantidade de xicaras de café com leite que já tomou na vida</label>
+    <input type="number" id="ipt_xicaras"> <br>
+    <button onclick="verQuantidade()">Ver quantidade</button>
+    <div id="exibir"></div> <br>
 </body>
 <script>
-    
+    function verQuantidade(){
+        var exibir = document.getElementById("exibir");
+        exibir.innerHTML = ``
+
+        var xicaras = Number(ipt_xicaras.value);
+        var leite = xicaras * 1;
+        var cafe = xicaras * 2;
+
+        for(var contador = 0; contador < leite; contador ++){
+            exibir.innerHTML += `<img src="https://images.tcdn.com.br/img/img_prod/757549/leite_em_po_integral_la_serenissima_granel_100g_852_1_20201214002442.jpg" alt="Leite" width="50" height="auto"> `;
+        };
+        for (var contador = 0; contador < cafe; contador++) {
+            exibir.innerHTML += `<img src="https://cdn.awsli.com.br/1215/1215170/produto/61724331/2295aec06c.jpg" alt="Café" width="50" height="auto"> `;
+        };
+    };
 </script>
 </html>

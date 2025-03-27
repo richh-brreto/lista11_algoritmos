@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <label for="ipt_depositos">Insira aqui a quantidade de depósitos foram feitos no banco</label>
+    <input type="number" id="ipt_depositos"> <br>
+    <label for="ipt_valorDepositos">Insira o valor dos depositos</label>
+    <input type="number" id="ipt_valorDepositos"> <br>
+    <button onclick="acompanharGrana()">Acompanhar Grana</button>
+    <div id="exibir"></div>
+</body>
+<script>
+    function acompanharGrana(){
+        var exibir = document.getElementById("exibir");
+        exibir.innerHTML = ``
+        var depositos = Number(ipt_depositos.value);
+        var valorDepositos = Number(ipt_valorDepositos.value);
+        var totalDepositos = 0;
+        
+
+        for(var contador = 1; contador <= depositos; contador ++){
+            totalDepositos += valorDepositos;
+            if(contador % 3 === 0){
+                totalDepositos *= 1.01;
+            } 
+            
+            exibir.innerHTML += `${contador}° Mês: R$${totalDepositos.toFixed(2)} <br>`
+        };
+        exibir.innerHTML += `Total acumulado: R$ ${totalDepositos.toFixed(2)}`
+    };
+</script>
+</html>
